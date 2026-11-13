@@ -128,7 +128,7 @@ With [Claude Code](https://claude.com/claude-code), add a `SessionStart` hook to
 | `00_Context/_INDEX.md` | optional status tag and `~NN%` estimate per spec |
 | `02_Memory/ADR-NNNN-*.md` | decision records: number, title, date, status, affected module |
 | `02_Memory/_inbox/*.md` | session notes |
-| `04_Anotações/*.md` | free-form notes |
+| `04_Anotações/*.md` | free-form notes (the folder keeps its Portuguese name, "Notes") |
 
 Links count as Obsidian does (`[[wikilink]]`, `[text](file.md)`, `![[attachment]]`); "ADR-1234" mentions and
 paths in backticks are kept as a separate, optional layer. Attachments respect Obsidian's *Excluded files*.
@@ -136,8 +136,8 @@ paths in backticks are kept as a separate, optional layer. Attachments respect O
 
 ## Troubleshooting
 
-- **"não parece a pasta de um projeto do vault"** — `VAULT_PANEL_VAULT` must point to a project folder that has
-  `01_Specs/` or `02_Memory/`, not to the vault root.
+- **"Not a vault project folder" on startup** (the panel prints it in Portuguese: *não parece a pasta de um projeto do
+  vault*) — `VAULT_PANEL_VAULT` must point to a project folder that has `01_Specs/` or `02_Memory/`, not to the vault root.
 - **Graph tab says networkx is missing** — install it in the Python the panel uses (`.venv/bin/pip install networkx`)
   or set `VAULT_PANEL_PYTHON`.
 - **Port already in use** — set another `VAULT_PANEL_PORT` (each port is a separate instance).
