@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.tmp
+local.env
+.venv/
+_status.html
+_graph.html
+local.modules.json

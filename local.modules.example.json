@@ -1,0 +1,10 @@
+{
+  "aliases": {
+    "auth": "Authentication",
+    "login": "Authentication",
+    "loginsocial": "Authentication",
+    "payments": "Payments",
+    "billing": "Payments"
+  },
+  "keep_slash": ["ci/cd"]
+}
